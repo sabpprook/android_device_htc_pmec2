@@ -22,9 +22,8 @@ TARGET_2ND_CPU_VARIANT := generic
 
 # Kernel
 BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 ehci-hcd.park=3 androidboot.bootdevice=7824900.sdhci lpm_levels.sleep_disabled=1 earlyprintk androidboot.hardware=htc_pmec2 cma=20M androidkey.dummy=1 androidboot.selinux=permissive
-
 BOARD_KERNEL_BASE := 0x80000000
-BOARD_KERNEL_PAGESIZE := 4096
+BOARD_KERNEL_PAGESIZE := 2048
 BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x01000000 --tags_offset 0x00000100 --board recovery:0
 TARGET_PREBUILT_KERNEL := device/htc/pmec2/kernel
 
